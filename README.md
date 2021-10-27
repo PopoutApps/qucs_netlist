@@ -1,19 +1,19 @@
-# qucs_netlist
+# qucs-netlist
 
 Converts Qucs schematic files into a form suitable for a PCB design application. It uses a Qucs schematic file to add components to a netlist file. If there is also a Qucs .sim file with the same name but the .sim extension, it will use that to create the nets, if not it will attempt to run Qucs to create a .sim file, if Qucs has been installed that should succeed, but it won't work from qucs-s. If no .sim file was present and can't be created, the output netlist file will contain components but no nets.
 
 INSTALLATION
 Assuming your system already has Python3 and PIP installed, type:
-  python3 -m pip install qucs_modules-qucs_netlist
+  pip install qucs-netlist==0.0.5
 
 RUNNING
 To process a schematic file in your current directory, type:
-	python3 -m qucs\_modules.qucs_netlist mycircuit.sch
+	python3 -m PopoutApps.qucs-netlist mycircuit.sch
 
 The output file will be called mycircuit.net
 
 If you run it again it will not overwrite the existing file, unless you add a 'y' at the end of the line:
-	python3 -m qucs\_modules.qucs_netlist mycircuit.sch
+	python3 -m popoutApps.qucs-netlist mycircuit.sch
 
 ERRORS
 The program will print a warning line for each component which is not yet in the reference data file: 
