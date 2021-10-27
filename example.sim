@@ -1,0 +1,118 @@
+# Qucs 0.0.22  /home/chris/Documents/Circuits/Netlists/qucsparts.sch
+
+.Def:LEDs_infrared _netC _netA
+      Diode:D_IR _netC _netA Is="1e-10 A" N="3.45" Cj0="3 pF" M="0.5" Vj="0.7 V" Fc="0.5" Cp="0.0 fF" Isr="0.0" Nr="2.0" Rs="0.1 Ohm" Tt="4.0 us" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Bv="5" Ibv="10 uA" Xti="3.0" Eg="1.11" Tbv="0.0" Trs="0.0" Ttt1="0.0" Ttt2="0.0" Tm1="0.0" Tm2="0.0" Tnom="26.85" Area="1.0"
+      R:Rleak _netA _netC R="50 MOhm" Temp="26.85"
+    .Def:End
+  
+
+.Def:OpAmps_uA741 _net3 _net22 _net0 _net11 _net14
+    BJT:T1 _net0 _net1 _net2 _net1 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T3 _net3 _net1 _net4 _net1 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T4 _net5 _net6 _net4 _net6 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="20" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T5 _net7 _net8 _net9 _net8 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T6 _net7 _net6 _net10 _net6 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T8 _net1 _net1 _net11 _net1 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="20" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T7 _net8 _net11 _net7 _net11 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T2 _net5 _net8 _net2 _net8 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="20" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T10 _net12 _net5 _net13 _net5 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T11 _net12 _net12 _net14 _net12 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T12 _net15 _net15 _net11 _net15 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="20" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    R:R3 _net14 _net10 R="1k" Temp="26.85"
+    R:R4 _net14 _net13 R="5k" Temp="26.85"
+    R:R5 _net12 _net15 R="39k" Temp="26.85"
+    BJT:T9 _net1 _net5 _net11 _net5 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="20" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T14 _net6 _net16 _net17 _net16 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T16 _net18 _net19 _net16 _net19 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T17 _net17 _net16 _net20 _net16 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    R:R6 _net19 _net18 R="4.5k" Temp="26.85"
+    BJT:T13 _net20 _net6 _net14 _net6 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    R:R8 _net17 _net14 R="50k" Temp="26.85"
+    R:R9 _net20 _net14 R="50" Temp="26.85"
+    R:R7 _net16 _net18 R="7.5k" Temp="26.85"
+    BJT:T18 _net21 _net19 _net22 _net19 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T19 _net19 _net11 _net21 _net11 Type="npn" Is="2p" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T15 _net15 _net19 _net11 _net19 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="20" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    BJT:T21 _net22 _net22 _net18 _net22 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="100" Cje="3p" Vje="0.75" Mje="0.33" Cjc="2p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="2p" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.3n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="6n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    R:R10 _net21 _net22 R="25" Temp="26.85"
+    R:R11 _net22 _net23 R="50" Temp="26.85"
+    BJT:T20 _net16 _net14 _net23 _net14 Type="pnp" Is="2p" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="100" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="160" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="20" Cje="6p" Vje="0.75" Mje="0.33" Cjc="4p" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="1n" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="20n" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0"
+    R:R2 _net14 _net7 R="50k" Temp="26.85"
+    R:R1 _net14 _net9 R="1k" Temp="26.85"
+    C:C1 _net6 _net19 C="30 pF"
+    .Def:End
+  
+
+.Def:PMOSFETs_BSP171 _net1 _net3 _net2
+    L:LS _net5 _net2 L="7n"
+    L:LD _net102 _net3 L="5n"
+    R:RG _net4 _net95 R="33.1"
+    R:RS _net5 _net76 R="92m"
+    Diode:D171 _net76 _net102 Cj0="1n" Rs="20m" Tt="100n" Is="300p" Bv="60" N="1" M="0.5" Vj="0.7"
+    # .MODEL:DREV  D (CJO=1N RS=20M TT=100N IS=300P BV=60) 
+    MOSFET:M171 _net95 _net117 _net76 _net76 Type="pfet" Vt0="-1.582" Kp="0.858" Is="1e-14" N="1" Lambda="0" Gamma="0" Phi="0.6"
+    # .MODEL:MBUZ  PMOS (VTO=-1.582 KP=0.858) 
+    MOSFET:M2 _net117 _net11 _net8 _net8 Type="pfet" Vt0="-0.001" Kp="0.3" Is="1e-14" N="1" Lambda="0" Gamma="0" Phi="0.6"
+    # .MODEL:MSW  PMOS (VTO=-0.001 KP=.3) 
+    MOSFET:M3 _net11 _net117 _net8 _net8 Type="pfet" Vt0="-0.001" Kp="0.3" Is="1e-14" N="1" Lambda="0" Gamma="0" Phi="0.6"
+    C:COX _net11 _net8 C="0.5n"
+    Diode:DGD _net8 _net117 Cj0="758p" M="0.635" Vj="1.015" Is="1e-15" N="1"
+    # .MODEL:DCGD  D (CJO=758P M=0.635 VJ=1.015) 
+    C:CGS _net76 _net95 C="0.6n"
+    Vdc:V8 _net11 _net95 U="-14"
+    R:RH _net117 _net102 R="10m"
+    L:LG _net4 _net1 L="7n"
+  .Def:End
+  
+
+.Def:Z_Diodes_1N756 _net0 _net1
+      Diode:D1 _net0 _net1 Is="1E-11" N="1.27" Rs="3.858" Cj0="2.749E-10" Vj="0.75" M="0.33" Fc="0.5" Tt="5E-8" Bv="8.123" Ibv="0.01" Af="1" Kf="0"
+    .Def:End
+  
+
+.Def:Varistors33 _net0 _net3 b1="0" b2="0" b3="0" b4="0" L_VDR="10 nH" C_VDR="10 pF" Tol="0"
+  L:L1 _net1 _net2 L="L_VDR" I=""
+  R:R1 _net0 _net1 R="0.0001 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+  C:C1 _net2 _net3 C="C_VDR" V=""
+  Gyrator:X1 _net2 gnd _net4 _net3 R="10000" Zref="50 Ohm"
+  EDD:D1 gnd _net4 I1="D1.I1" Q1="D1.Q1"
+  Eqn:EqnD1I1   D1.I1="sign(V1)*(1+Tol/100)*10^(-4+b1+b2*(log10(abs(V1)+1E-4)-4)+b3*exp(-log10(abs(V1)+1E-4)+4)+b4*exp(log10(abs(V1)+1E-4)-4))" Export="no"
+   Eqn:EqnD1Q1 D1.Q1="0" Export="no"
+  .Def:End
+  .Def:Varistors_B60K320 _net0 _net1 Tol="0"
+ Sub:SUB1 _net0 _net1 Type="Varistors33" b1="2.7865675" b2="0.0196155" b3="-0.0010111" b4="0.0029728" L_VDR="27.0nH" C_VDR="5600pF" Tol="Tol"
+  .Def:End
+  
+
+L:L1 _net0 _net1 L="1 nH" I=""
+Switch:S1 _net6 _net7 init="off" time="[1 ms]" Ron="0" Roff="1e12" Temp="26.85" MaxDuration="1e-6" Transition="spline"
+Relais:S2 _net8 _net9 _net10 _net11 Vt="0.5 V" Vh="0.1 V" Ron="0" Roff="1e12" Temp="26.85"
+Vdc:V1 _net12 _net13 U="1 V"
+Vac:V2 _net14 _net15 U="1 V" f="1 GHz" Phase="0" Theta="0"
+BJT:T1 _net16 _net17 _net18 _net17 Type="npn" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="0" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="100" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="0" Cje="0" Vje="0.75" Mje="0.33" Cjc="0" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.0" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="0.0" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0" Xtb="0.0" Xti="3.0" Eg="1.11" Tnom="26.85" Area="1.0"
+BJT:T2 _net19 _net20 _net21 _net20 Type="pnp" Is="1e-16" Nf="1" Nr="1" Ikf="0" Ikr="0" Vaf="0" Var="0" Ise="0" Ne="1.5" Isc="0" Nc="2" Bf="100" Br="1" Rbm="0" Irb="0" Rc="0" Re="0" Rb="0" Cje="0" Vje="0.75" Mje="0.33" Cjc="0" Vjc="0.75" Mjc="0.33" Xcjc="1.0" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="0.0" Xtf="0.0" Vtf="0.0" Itf="0.0" Tr="0.0" Temp="26.85" Kf="0.0" Af="1.0" Ffe="1.0" Kb="0.0" Ab="1.0" Fb="1.0" Ptf="0.0" Xtb="0.0" Xti="3.0" Eg="1.11" Tnom="26.85" Area="1.0"
+JFET:T4 _net22 _net23 _net24 Type="pfet" Vt0="-2.0 V" Beta="1e-4" Lambda="0.0" Rd="0.0" Rs="0.0" Is="1e-14" N="1.0" Isr="1e-14" Nr="2.0" Cgs="0.0" Cgd="0.0" Pb="1.0" Fc="0.5" M="0.5" Kf="0.0" Af="1.0" Ffe="1.0" Temp="26.85" Xti="3.0" Vt0tc="0.0" Betatce="0.0" Tnom="26.85" Area="1.0"
+MOSFET:T6 _net28 _net29 _net30 _net30 Type="pfet" Vt0="-1.0 V" Kp="2e-5" Gamma="0.0" Phi="0.6 V" Lambda="0.0" Rd="0.0 Ohm" Rs="0.0 Ohm" Rg="0.0 Ohm" Is="1e-14 A" N="1.0" W="1 um" L="1 um" Ld="0.0" Tox="0.1 um" Cgso="0.0" Cgdo="0.0" Cgbo="0.0" Cbd="0.0 F" Cbs="0.0 F" Pb="0.8 V" Mj="0.5" Fc="0.5" Cjsw="0.0" Mjsw="0.33" Tt="0.0 ps" Nsub="0.0" Nss="0.0" Tpg="1" Uo="600.0" Rsh="0.0" Nrd="1" Nrs="1" Cj="0.0" Js="0.0" Ad="0.0" As="0.0" Pd="0.0 m" Ps="0.0 m" Kf="0.0" Af="1.0" Ffe="1.0" Temp="26.85" Tnom="26.85"
+OpAmp:OP1 _net31 _net32 _net33 G="1e6" Umax="15 V"
+Diac:D2 _net34 _net35 Vbo="30 V" Ibo="50 uA" Cj0="10 pF" Is="1e-10 A" N="2" Ri="10 Ohm" Temp="26.85"
+RTD:D5 _net42 _net43 Ip="4 mA" Iv="0.6 mA" Vv="0.8 V" Wr="2.7e-20" eta="1e-20" dW="4.5e-21" Tmax="0.95" de="0.9" dv="2.0" nv="16" Cj0="80 fF" M="0.5" Vj="0.5 V" te="0.6 ps" Temp="26.85" Area="1.0"
+potentiometer:POT1 _net44 _net45 _net46 R_pot="1e4" Rotation="120" Taper_Coeff="0" LEVEL="1" Max_Rotation="240.0" Conformity="0.2" Linearity="0.2" Contact_Res="1" Temp_Coeff="100" Tnom="26.85" Temp="26.85"
+Diode:D_1N4148_1 _net59 _net60 Is="222p" N="1.65" Cj0="4p" M="0.333" Vj="0.7" Fc="0.5" Cp="0" Isr="0" Nr="2" Rs="68.6m" Tt="5.76n" Ikf="0" Kf="0" Af="1" Ffe="1" Bv="75" Ibv="1u" Temp="26.85" Xti="3.0" Eg="1.11" Tbv="0.0" Trs="0.0" Ttt1="0.0" Ttt2="0.0" Tm1="0.0" Tm2="0.0" Tnom="26.85" Area="1.0"
+JFET:J406_1 _net64 _net65 _net66 Type="nfet" Vt0="-1.316" Beta="1.577m" Lambda="10m" Rd="1" Rs="1" Is="19.73f" N="1" Isr="191.3f" Nr="2" Cgs="6.044p" Cgd="5.6p" Pb="0.5" Fc="0.5" M="0.3916" Kf="4.592e-018" Af="1" Ffe="1" Temp="26.85" Xti="3" Vt0tc="0" Betatce="-0.5" Tnom="26.85" Area="1"
+Sub:D7 _net67 _net68 Type="LEDs_infrared"
+MOSFET:M2N3796_1 _net69 _net70 _net71 _net71 Type="nfet" Vt0="3" Kp="960u" Gamma="3.72" Phi="0.75" Lambda="4m" Rd="21" Rs="21" Rg="0" Is="10f" N="1" W="0.0001" L="0.0001" Ld="0" Tox="1e-07" Cgso="6n" Cgdo="5n" Cgbo="39n" Cbd="13.2p" Cbs="15.9p" Pb="0.8" Mj="0.46" Fc="0.5" Cjsw="0" Mjsw="0.33" Tt="0" Nsub="0" Nss="0" Tpg="1" Uo="600" Rsh="0" Nrd="1" Nrs="1" Cj="0" Js="0" Ad="0" As="0" Pd="0" Ps="0" Kf="0" Af="1" Ffe="1" Temp="26.85" Tnom="26.85"
+Sub:OP3 _net72 _net73 _net74 _net75 _net76 Type="OpAmps_uA741"
+Sub:T7 _net77 _net78 _net79 Type="PMOSFETs_BSP171"
+R:LM317_1.0 _net80 _net81 R="0"
+R:LM317_1.1 _net80 _net82 R="0"
+BJT:BC178AP_1 _net83 _net84 _net85 _net84 Type="pnp" Is="1.15e-14" Nf="0.9872" Nr="0.996" Ikf="0.1" Ikr="0.012" Vaf="84.56" Var="8.15" Ise="5e-14" Ne="1.4" Isc="1.43e-14" Nc="1.1" Bf="330" Br="13" Rbm="0" Irb="0" Rc="0.95" Re="0.4" Rb="0.2" Cje="1.6e-11" Vje="0.75" Mje="0.33" Cjc="1.05e-11" Vjc="0.565" Mjc="0.415" Xcjc="1" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="4.93e-10" Xtf="0" Vtf="0" Itf="0" Tr="7.355e-08" Temp="26.85" Kf="0" Af="1" Ffe="1" Kb="0" Ab="1" Fb="1" Ptf="0" Xtb="0" Xti="3" Eg="1.11" Tnom="26.85" Area="1"
+BJT:QBC182BP_1 _net86 _net87 _net88 _net87 Type="npn" Is="1.8e-14" Nf="0.9955" Nr="1.005" Ikf="0.14" Ikr="0.03" Vaf="80" Var="12.5" Ise="5e-14" Ne="1.46" Isc="1.72e-13" Nc="1.27" Bf="400" Br="35.5" Rbm="0" Irb="0" Rc="0.25" Re="0.6" Rb="0.56" Cje="1.3e-11" Vje="0.75" Mje="0.33" Cjc="4e-12" Vjc="0.54" Mjc="0.33" Xcjc="1" Cjs="0" Vjs="0.75" Mjs="0" Fc="0.5" Tf="6.4e-10" Xtf="0" Vtf="0" Itf="0" Tr="5.072e-08" Temp="26.85" Kf="0" Af="1" Ffe="1" Kb="0" Ab="1" Fb="1" Ptf="0" Xtb="0" Xti="3" Eg="1.11" Tnom="26.85" Area="1"
+Sub:D8 _net89 _net90 Type="Z_Diodes_1N756"
+Sub:VDR1 _net91 _net92 Type="Varistors_B60K320" Tol="0"
+C:C1 _net93 _net94 C="1 pF" V=""
+C:C2 _net95 _net96 C="1 pF" V=""
+R:R1 _net97 _net98 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:R2 _net99 _net100 R="50 Ohm" Temp="26.85" Tc1="0.0" Tc2="0.0" Tnom="26.85"
+R:PVR100AZ_B12V_1.0 _net101 _net102 R="0"
+R:PVR100AZ_B12V_1.1 _net101 _net103 R="0"
+R:PVR100AZ_B12V_1.2 _net101 _net104 R="0"
