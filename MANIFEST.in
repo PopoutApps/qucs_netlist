@@ -1,1 +1,1 @@
-include src/PopoutApps/qucs_netlist.dat src/PopoutApps/qucs_netlist.html src/PopoutApps/qucs_netlist.hlp
+include src/PopoutApps/qucs-netlist.dat src/PopoutApps/qucs-netlist.html src/PopoutApps/qucs-netlist.hlp
